@@ -8,3 +8,20 @@ Thu Mar 17 22:47:53 UTC 2022:
  tests:  1|5
 total_score: 10/70
 4db3dd2
+Thu Mar 17 22:48:33 UTC 2022: 
+ list.c | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+In file included from test.c:5:0:
+list.c: In function ‘firstList’:
+list.c:41:6: error: ‘lista’ undeclared (first use in this function); did you mean ‘list’?
+   if(lista->head==NULL){
+      ^~~~~
+      list
+list.c:41:6: note: each undeclared identifier is reported only once for each function it appears in
+list.c: In function ‘nextList’:
+list.c:52:6: error: ‘lista’ undeclared (first use in this function); did you mean ‘list’?
+   if(lista->current==NULL || lista->current->next==NULL){
+      ^~~~~
+      list
+Compilation failed
+d0a58d1
