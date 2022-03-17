@@ -29,54 +29,54 @@ Node * createNode(void * data) {
 }
 
 List * createList() {
-  List* lista=(List*) malloc (sizeof(List));
-  lista->head=NULL;
-  lista->tail=NULL;
-  return lista;
+  List* list=(List*) malloc (sizeof(List));
+  list->head=NULL;
+  list->tail=NULL;
+  return list;
   return NULL;
      return NULL;
 }
 
-void * firstList(List * lista) {
-  if(lista->head==NULL){
+void * firstList(List * list) {
+  if(list->head==NULL){
     return NULL;
   }
   else{
-    lista->current=lista->head;
-    return lista->head->data;
+    list->current=list->head;
+    return list->head->data;
   }
     return NULL;
 }
 
-void * nextList(List * lista) {
-  if(lista->current==NULL || lista->current->next==NULL){
+void * nextList(List * list) {
+  if(list->current==NULL || list->current->next==NULL){
     return NULL;
   }
   else{
-    lista->current=lista->current->next;
-    return lista->current->data;
+    list->current=list->current->next;
+    return list->current->data;
   }
     return NULL;
 }
 
-void * lastList(List * lista) {
-  if(lista->tail==NULL){
+void * lastList(List * list) {
+  if(list->tail==NULL){
     return NULL;
   }
   else{
-    lista->current=lista->tail;
-    return lista->tail->data;
+    list->current=list->tail;
+    return list->tail->data;
   }
     return NULL;
 }
 
-void * prevList(List * lista) {
-  if(lista->current->prev==NULL){
+void * prevList(List * list) {
+  if(list->current->prev==NULL){
     return NULL;
   }
   else{
-    lista->current=lista->current->prev;
-    return lista->current->data;
+    list->current=list->current->prev;
+    return list->current->data;
   }
     return NULL;
 }
