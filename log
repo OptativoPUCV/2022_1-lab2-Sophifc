@@ -96,3 +96,9 @@ Thu Mar 17 23:04:49 UTC 2022:
  tests:  11|1
 total_score: 60/70
 8feffa5
+Thu Mar 17 23:06:05 UTC 2022: 
+ list.c | 12 ++++--------
+ 1 file changed, 4 insertions(+), 8 deletions(-)
+ tests:  12|0
+total_score: 70/70
+a716cb5
